@@ -13,12 +13,10 @@ This must test each of your Area/Volume functions, with a least 3 examples for e
 
 As this stands it will NOT work with your A_V_calc.py file.
 '''
-
-#from assertions import add2
 import pytest 
-import A_V_calc_starter
+import A_V_calc
 
-def test_arec1():
+def test_arec1():    #The following 3 functions test the area of a rectangle
     assert A_V_calc.arec(2, 2) == 4
 
 def test_arec2():
@@ -27,7 +25,7 @@ def test_arec2():
 def test_arec3():
     assert A_V_calc.arec(3, 3) == 9
     
-def test_asqr1():
+def test_asqr1():    #The following 3 functions test the area of a square
     assert A_V_calc.asqr(2) == 4
     
 def test_asqr2():
@@ -36,7 +34,7 @@ def test_asqr2():
 def test_asqr3():
     assert A_V_calc.asqr(4) == 16
     
-def test_acir1():
+def test_acir1():    #The following 3 functions test the area of a circle
     assert A_V_calc.acir(2) == 12.566370614359172
     
 def test_acir2():
@@ -45,7 +43,7 @@ def test_acir2():
 def test_acir3():
     assert A_V_calc.acir(4) == 50.26548245743669
     
-def test_acub1():
+def test_acub1():    #The following 3 functions test the area of a cube  
     assert A_V_calc.acub(2) == 24
     
 def test_acub2():
@@ -54,7 +52,7 @@ def test_acub2():
 def test_acub3():
     assert A_V_calc.acub(4) == 96
     
-def test_vcub1():
+def test_vcub1():    #The following 3 functions test the volume of a cube
     assert A_V_calc.vcub(2) == 8
 
 def test_vcub2():
@@ -62,4 +60,3 @@ def test_vcub2():
 
 def test_vcub3():
     assert A_V_calc.vcub(4) == 64
-    
